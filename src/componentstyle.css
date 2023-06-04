@@ -1,0 +1,134 @@
+
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+
+
+
+@font-face {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+}
+
+.main-container{
+border-radius: .8rem;
+padding: .8rem;
+}
+
+.header{
+    background-color:  hsl(0, 0%, 100%);
+    font-family:  'Plus Jakarta Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    padding: 1rem .6rem;
+}
+
+.header >h1{
+    font-size:1.2rem ;
+    display: inline;
+}
+.header >h1> span{
+   background-color:hsl(219, 85%, 26%);
+   color: white;
+   font-size: 1rem;
+   padding: .1rem .4rem;
+   border-radius: .3rem;
+   margin-left:1rem ;
+
+}
+
+.header-btn{
+    border-style: none;
+    background-color:  hsl(0, 0%, 100%);
+    font-size: .7rem;
+    font-weight: 500;
+    color:  hsl(180, 3%, 59%);
+    text-align: right;
+    /* width:calc( 40% + 10px); */
+   
+}
+.profile-img{
+  /* max-width: 100%; */
+  /* height: auto; */
+  width: 40px;
+  height: 40px;
+  
+ }
+ .notification-container{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    gap: .8em;
+    padding: 1.2rem;
+    /* flex-flow: rows wrap; */
+    color:rgb(119, 119, 119);
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 1.1rem;
+    margin-bottom: .4rem;
+    border-radius: .8rem;
+}
+.notification-container:hover{
+     background-color: hsl(208, 79%, 96%);
+ }
+ .notific-para strong,
+ .notific-para{
+    display: inline;
+    margin-right: .5rem;
+ }
+ .notific-para strong{
+    color: black;
+    font-weight: 700;
+ }
+ .notific-para > strong:hover{
+    color:hsl(219, 85%, 26%);
+ }
+.time{
+    display: block;
+    
+}
+.privateMessage{
+    padding: .8rem;
+    border-radius: .8rem;
+}
+
+.privateMessage:hover{
+    background-color: hsl(205, 33%, 90%);
+}
+.side-img{
+    display: inline;
+    width: 40px;
+    height: 40px;
+
+}
+.notific-para span:hover{
+    font-weight: 600;
+    color:hsl(219, 85%, 26%);
+}
+.header-btn:hover{
+    font-weight: 600;
+    color:hsl(219, 85%, 26%);
+}
+
+
+@media (min-width:450px) {
+   .main-container{
+    width: 650px;
+   
+    background-color:  hsl(0, 0%, 100%);
+    margin-top:.3rem ;
+    /* background-color: aqua; */
+   }
+   body{
+    background-color: hsl(211, 68%, 94%);
+    display: grid;
+    place-items: center;
+   }
+   .side-img{
+   margin-left: 40%;
+
+}
+    
+}
